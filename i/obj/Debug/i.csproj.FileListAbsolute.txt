@@ -80,6 +80,6 @@ F:\work\i\i\bin\ko\System.Spatial.resources.dll
 F:\work\i\i\bin\ru\System.Spatial.resources.dll
 F:\work\i\i\bin\zh-Hans\System.Spatial.resources.dll
 F:\work\i\i\bin\zh-Hant\System.Spatial.resources.dll
-F:\work\i\i\obj\Debug\i.csprojResolveAssemblyReference.cache
 F:\work\i\i\obj\Debug\i.dll
 F:\work\i\i\obj\Debug\i.pdb
+F:\work\i\i\bin\Elmah.dll
