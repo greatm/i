@@ -1,17 +1,19 @@
-﻿html {
-    background-color: #e2e2e2;
+﻿html, body {
+    height: 100%;
     margin: 0;
     padding: 0;
 }
 
+html {
+    background-color: #e2e2e2;
+}
+
 body {
-    background-color: #fff;
+    background-color: aliceblue;
     border-top: solid 10px #000;
     color: #333;
     font-size: .85em;
     font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
-    margin: 0;
-    padding: 0;
 }
 
 a {
@@ -99,9 +101,12 @@ h5, h6 {
 }
 
 #body {
-    background-color: #efeeef;
+    background-color: lightyellow;
     clear: both;
     padding-bottom: 35px;
+    margin-left: 200px;
+    min-height: 435px;
+    height: auto !important;
 }
 
 .main-content {
@@ -765,3 +770,20 @@ a.site-logo {
     height: 90px;
     text-indent: -9999px; /* hides the link text */
 }
+
+#accordionMenu {
+    position: absolute;
+    left: 0px;
+    width: 200px;
+    top: 110px;
+    height: 100%;
+}
+
+    #accordionMenu > h3 {
+        /*background-color:lightsteelblue;*/
+        background: lightsteelblue;
+    }
+
+    #accordionMenu > div {
+        background: lightskyblue;
+    }

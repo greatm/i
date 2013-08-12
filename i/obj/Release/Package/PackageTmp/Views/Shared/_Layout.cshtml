@@ -1,48 +1,88 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <title>@ViewBag.Title - My ASP.NET MVC Application</title>
-        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-        <meta name="viewport" content="width=device-width" />
-        @Styles.Render("~/Content/css")
-        @Scripts.Render("~/bundles/modernizr")
-    </head>
-    <body>
-        <header>
-            <div class="content-wrapper">
-                <div class="float-left">
-                    <p class="site-title">@Html.ActionLink("your logo here", "Index", "Home")</p>
-                </div>
-                <div class="float-right">
-                    <section id="login">
-                        @Html.Partial("_LoginPartial")
-                    </section>
-                    <nav>
-                        <ul id="menu">
-                            <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                            <li>@Html.ActionLink("About", "About", "Home")</li>
-                            <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                        </ul>
-                    </nav>
-                </div>
+<head>
+    <meta charset="utf-8" />
+    <title>inventorisolutions @ViewBag.Title</title>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+    @Styles.Render("~/Content/css")
+    <link rel="stylesheet" href="~/Content/themes/base/jquery-ui.css" type="text/css" />
+    <link rel="stylesheet" href="~/Content/themes/base/jquery.ui.accordion.css" type="text/css" />
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryui")
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/bundles/modernizr")
+    <script src="~/Scripts/MyScript.js"></script>
+</head>
+<body>
+    <header>
+        <div class="content-wrapper">
+            <div class="float-left">
+                <p class="site-title">@Html.ActionLink("i", "Index", "Home", null, new { @class = "site-logo" })</p>
             </div>
-        </header>
-        <div id="body">
-            @RenderSection("featured", required: false)
-            <section class="content-wrapper main-content clear-fix">
-                @RenderBody()
-            </section>
+            <div class="float-right">
+                <section id="login">
+                    @Html.Partial("_LoginPartial")
+                </section>
+            </div>
         </div>
-        <footer>
-            <div class="content-wrapper">
-                <div class="float-left">
-                    <p>&copy; @DateTime.Now.Year - My ASP.NET MVC Application</p>
-                </div>
-            </div>
-        </footer>
+    </header>
 
-        @Scripts.Render("~/bundles/jquery")
-        @RenderSection("scripts", required: false)
-    </body>
+    <div id="accordionMenu">
+        <h3>Home</h3>
+        <div>
+            <p>@Html.ActionLink("Home", "Index", "Home")</p>
+            <p>@Html.ActionLink("About", "About", "Home")</p>
+            <p>@Html.ActionLink("Contact", "Contact", "Home")</p>
+        </div>
+        <h3>Master</h3>
+        <div>
+            <p>@Html.ActionLink("Vendor", "Index", "MasterVendor")</p>
+            <p>@Html.ActionLink("Product", "Index", "MasterProduct")</p>
+            <hr />
+            <p>@Html.ActionLink("Store", "Index", "MasterStore")</p>
+            <p>@Html.ActionLink("Sub Location", "Index", "MasterSublocation")</p>
+            <hr />
+            <p>@Html.ActionLink("Customers", "Index", "MasterCustomer")</p>
+        </div>
+        <h3>Purchase</h3>
+        <div>
+            <p>@Html.ActionLink("Purchase Order", "Index", "PurchaseOrder")</p>
+            <p>@Html.ActionLink("Purchase", "Index", "Purchase")</p>
+        </div>
+        <h3>Sales</h3>
+        <div>
+            <p>@Html.ActionLink("Store Transfer", "Index", "StoreTransfer")</p>
+            <p>@Html.ActionLink("Sales Order", "Index", "SalesOrder")</p>
+            <p>@Html.ActionLink("Sales", "Index", "Sales")</p>
+            <p>@Html.ActionLink("Packing List", "Index", "PackingList")</p>
+        </div>
+        <h3>Reports</h3>
+        <div>
+            <p>@Html.ActionLink("Users", "PrintUsers", "ReportUsers")</p>
+            <hr />
+            <p>@Html.ActionLink("Purchase Orders", "PrintPOgrid", "ReportPO")</p>
+            <p>@Html.ActionLink("Purchase", "ViewReport", "ReportPurchase")</p>
+            <hr />
+            <p>@Html.ActionLink("Sales", "ViewReport", "ReportSales")</p>
+        </div>
+    </div>
+
+    <div id="body">
+        @RenderSection("featured", required: false)
+        <section class="content-wrapper main-content clear-fix">
+            @RenderBody()
+        </section>
+    </div>
+    <footer>
+        <div class="content-wrapper">
+            <div class="float-left">
+                <p>&copy; @DateTime.Now.Year - great.</p>
+            </div>
+        </div>
+    </footer>
+
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("scripts", required: false)
+</body>
 </html>
