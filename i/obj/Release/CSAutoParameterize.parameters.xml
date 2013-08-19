@@ -3,4 +3,7 @@
   <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection Connection String used in web.config by the application to access the database." defaultValue="Data Source=(LocalDb)\v11.0;Initial Catalog=aspnet-i-20130810094114;Integrated Security=SSPI;AttachDBFilename=|DataDirectory|\aspnet-i-20130810094114.mdf" tags="SqlConnectionString">
     <parameterEntry kind="XmlFile" scope="F:\\work\\i\\i\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
   </parameter>
+  <parameter name="i.Models.iDBcontext-Web.config Connection String" description="i.Models.iDBcontext Connection String used in web.config by the application to access the database." defaultValue="i.Models.iDBcontext_ConnectionString" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="F:\\work\\i\\i\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='i.Models.iDBcontext']/@connectionString" />
+  </parameter>
 </parameters>
