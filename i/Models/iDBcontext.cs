@@ -39,6 +39,8 @@ namespace i.Models
                 //new whatsnew { WorkTime = new DateTime(2013, 4, 26, 10, 30, 0), Work = "add master product" },
                 //new whatsnew { WorkTime = new DateTime(2013, 4, 26, 10, 20, 0), Work = "add master vendor" },
 
+                //new whatsnew { WorkTime = new DateTime(2013, 4, 26, 10, 10, 0), Work = "add bottom horizontal bar – expanding dynamically" },
+                new whatsnew { WorkTime = new DateTime(2013, 4, 26, 10, 10, 0), Work = "add bottom horizontal bar – expanding dynamically" },
                 new whatsnew { WorkTime = new DateTime(2013, 4, 26, 10, 10, 0), Work = "add accordion" },
                 new whatsnew { WorkTime = new DateTime(2013, 4, 26, 10, 10, 0), Work = "put colors" },
                 new whatsnew { WorkTime = new DateTime(2013, 4, 26, 10, 10, 0), Work = "add logo" }
