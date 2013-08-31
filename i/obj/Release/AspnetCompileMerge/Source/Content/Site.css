@@ -60,8 +60,7 @@ mark {
     visibility: hidden;
 }
 
-h1, h2, h3,
-h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
     color: #000;
     margin-bottom: 0;
     padding-bottom: 0;
@@ -110,7 +109,7 @@ h5, h6 {
 }
 
 .main-content {
-    background: url("../Images/accent.png") no-repeat;
+    /*background: url("../Images/accent.png") no-repeat;*/
     padding-left: 10px;
     padding-top: 30px;
 }
@@ -120,14 +119,18 @@ h5, h6 {
 }
 
 header .content-wrapper {
-    padding-top: 20px;
+    padding-top: 10px;
 }
 
 footer {
-    clear: both;
+    /*clear: both;
     background-color: #e2e2e2;
     font-size: .8em;
-    height: 100px;
+    height: 100px;*/
+    background-color: dodgerblue;
+    font-size: .8em;
+    height: 30px;
+    width: 100%;
 }
 
 
